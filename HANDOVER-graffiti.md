@@ -8,6 +8,28 @@
 
 ---
 
+## ★ Update, round 2 (2026-10-04): working code is ready, start with `graffiti-kit/`
+
+- **The user answered:** question 1 (tab after Paint, Export moves to key 7) is OK, and question 2 (denim first) is OK.
+  They sent **reference photos** (`graffiti-kit/reference/ref1..5`):
+  1. black jeans with bleach splatter
+  2. dark indigo crumple bleach with peach cores
+  3. 80s acid-wash jacket
+  4. light feather-marble wash
+  5. a wash glossary chart: Acid, Antique, Crosshatch, Dirty, Hand Sanding, Rinse, Sandblast, Sandwash, Stonewash,
+     Tinted, Vintage, Whisker
+- **Built and tested** (headless Chromium against the snapshot, not yet in the exe): `graffiti-kit/`
+  - Graffiti workspace, Spray can with live drips, and Acid / bleach tool with live spreading and permanganate stages.
+  - The "Dynamic" effect family (12 washes with ▶), 5 denim surfaces, and 10 looks matched to the photos.
+  - An installer with anchored edits (`graffiti-kit/install/apply.mjs`) and an exe-compatible test (`m28_graffiti.js`).
+- **This covers M28a, M28b and M28c** from section 7, plus the denim part of M28e (looks / presets).
+- **Still open:** M28d (whiskers, honeycombs, rips with weft bridges), "Piece from text", a run inside the exe and an exe
+  rebuild. The open questions left are 3 (raster vs editable strokes: built as raster + stored strokes + exact Replay),
+  5 (mockups) and 6 (pen tablet: pressure is read, tilt is not).
+- **Start here:** `graffiti-kit/README.md` → install (§1) → checklist (§2).
+
+---
+
 ## 0. TL;DR
 
 1. Add a **7th workspace tab, "Graffiti"**, for spray-can painting and acid / bleach / stone-wash effects on denim.
